@@ -1,1 +1,23 @@
 @import '~antd/dist/antd.css';
+
+.site-layout-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    border-radius: 20px;
+    min-height: 80%;
+    background: #001529;
+}
+
+.jokes-content {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.jokes-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
