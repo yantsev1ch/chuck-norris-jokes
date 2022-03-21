@@ -16,7 +16,8 @@ const RandomJoke: FC<PropsType> = () => {
 
     useEffect(() => {
         if (start) {
-            setTimeout(() => dispatch(getJoke()), 3000);
+            const interval = setInterval(() => dispatch(getJoke()), 3000);
+            return () => clearInterval(interval)
         }
     })
 
